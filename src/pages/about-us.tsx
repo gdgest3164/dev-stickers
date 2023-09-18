@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../Coponents/Laouy";
+import Layout from "../Coponents/Layouy";
 import Seo from "../Coponents/Seo";
 
 export default function No() {

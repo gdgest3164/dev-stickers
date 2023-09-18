@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../Coponents/Laouy";
+import Layout from "../../Coponents/Layouy";
 import { graphql } from "gatsby";
 import Seo from "../../Coponents/Seo";
 import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image";

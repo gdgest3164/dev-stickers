@@ -1,5 +1,5 @@
 import * as React from "react";
-import Layout from "../../Coponents/Laouy";
+import Layout from "../../Coponents/Layouy";
 import Seo from "../../Coponents/Seo";
 import { Link, PageProps, graphql } from "gatsby";
 
@@ -7,8 +7,8 @@ export default function blog({ data }: PageProps<Queries.BlogPostsQuery>) {
   return (
     <Layout title="Blog">
       <section className="grid">
-        <div className="grid">
-          {data.allMdx.nodes.map((file, index) => (
+        {data.allMdx.nodes.map((file, index) => (
+          <div className="grid">
             <article key={index}>
               <Link to={`/blog/${file.frontmatter?.slug}`}>
                 <h3>{file.frontmatter?.title}</h3>
@@ -20,8 +20,8 @@ export default function blog({ data }: PageProps<Queries.BlogPostsQuery>) {
                 <p>{file.excerpt}</p>
               </Link>
             </article>
-          ))}
-        </div>
+          </div>
+        ))}
       </section>
     </Layout>
   );
