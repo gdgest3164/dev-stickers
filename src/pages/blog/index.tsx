@@ -2,7 +2,6 @@ import * as React from "react";
 import Layout from "../../Coponents/Laouy";
 import Seo from "../../Coponents/Seo";
 import { Link, PageProps, graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 
 export default function blog({ data }: PageProps<Queries.BlogPostsQuery>) {
   return (
